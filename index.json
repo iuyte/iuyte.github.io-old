@@ -137,7 +137,7 @@
 	"title": "include",
 	"tags": [],
 	"description": "",
-	"content": "This is where the header files live.\n"
+	"content": "This is where the header files can be found.\n"
 },
 {
 	"uri": "https://iuyte.github.io/source/src/init.cpp/",
@@ -221,5 +221,5 @@
 	"title": "src",
 	"tags": [],
 	"description": "",
-	"content": "This is where the source files live.\n"
+	"content": "This is where the source files can be found.\n"
 }]
