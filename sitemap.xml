@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://iuyte.github.io/</loc>
-    <lastmod>2017-06-19T20:51:01-04:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://iuyte.github.io/about/mentors/</loc>
     <lastmod>2017-06-19T20:51:01-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/about/Spencer/</loc>
-    <lastmod>2017-06-18T20:38:40-04:00</lastmod>
   </url>
   
   <url>
@@ -23,12 +13,7 @@
   </url>
   
   <url>
-    <loc>https://iuyte.github.io/about/_index/</loc>
-    <lastmod>2017-06-18T20:38:34-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/about/Ethan/</loc>
+    <loc>https://iuyte.github.io/about/</loc>
     <lastmod>2017-06-18T20:38:34-04:00</lastmod>
   </url>
   
@@ -38,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://iuyte.github.io/notebook/Programming/</loc>
+    <loc>https://iuyte.github.io/notebook/programming/</loc>
     <lastmod>2017-06-18T16:20:34-04:00</lastmod>
   </url>
   
@@ -48,13 +33,104 @@
   </url>
   
   <url>
-    <loc>https://iuyte.github.io/_index/</loc>
+    <loc>https://iuyte.github.io/</loc>
     <lastmod>2017-06-18T16:02:07-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://iuyte.github.io/slides/test/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+    <loc>https://iuyte.github.io/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/notebook/</loc>
+    <lastmod>2017-06-18T16:20:34-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/api.h/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/debug.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/drive.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/gyro.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/lift.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/main.h/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/motors.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/pid.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/sensors.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/auto.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/debug.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/drive.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/gyro.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/init.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/lift.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/motors.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/opcontrol.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/pid.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/sensors.cpp/</loc>
   </url>
   
 </urlset>
