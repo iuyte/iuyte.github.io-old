@@ -49,15 +49,6 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>Programming</title>
-      <link>https://iuyte.github.io/notebook/programming/</link>
-      <pubDate>Sun, 18 Jun 2017 16:20:34 -0400</pubDate>
-      
-      <guid>https://iuyte.github.io/notebook/programming/</guid>
-      <description>body { align: center; // background-color: #bfbfdf; background-image: url(&#34;/img/bubbles.png&#34;) background-repeat: repeat; width: 100%; margin: 0px; font-family: &#39;Open Sans&#39;, sans-serif; } .link { color: black; text-decoration: none; word-wrap: break-word; } .link:visited { color: black; text-decoration: none; cursor: auto; } .link:hover { color: #0000EE; text-decoration: underline; cursor: pointer; } .commit { background-color: #efefef; width: 90%; align: center; align-self: center; align-content: center; align-items: center; border-color: #454585; border-style: groove inset; border-radius: 25px; padding: 20px; margin: 5%; box-shadow: 10px 10px 5px #777777; } .</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://iuyte.github.io/_header/</link>
       <pubDate>Sun, 18 Jun 2017 16:02:07 -0400</pubDate>

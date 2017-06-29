@@ -38,18 +38,16 @@
   </url>
   
   <url>
-    <loc>https://iuyte.github.io/source/</loc>
-  </url>
-  
-  <url>
     <loc>https://iuyte.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://iuyte.github.io/notebook/</loc>
-    <lastmod>2017-06-18T16:20:34-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/</loc>
   </url>
   
   <url>

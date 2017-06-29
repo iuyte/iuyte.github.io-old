@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="description" content="Code for src/sensors.cpp">
+
+
+    <title>src/sensors.cpp :: VEX Team 709S</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/horsey.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/source/src/sensors.cpp/">
+    <nav id="sidebar" class="">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>VEX Team 709S</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/iuyte.github.io\/";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/about/" class="dd-item 
+
+
+
+">
+  <a href="/about/">
+    <span>About Our Team Members</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/about/mentors/" class="dd-item
+         
+          ">
+            <a href="/about/mentors/">
+            <span>Our Mentors</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/about/spencer/" class="dd-item
+         
+          ">
+            <a href="/about/spencer/">
+            <span>Spencer</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/about/ethan/" class="dd-item
+         
+          ">
+            <a href="/about/ethan/">
+            <span>Ethan</span> 
+            
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/notebook/" class="dd-item 
+
+
+
+">
+  <a href="/notebook/">
+    <span>Engineering Notebooks</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+        
+
+
+
+
+<li data-nav-id="/notebook/programming/" class="dd-item 
+
+
+
+">
+  <a href="/notebook/programming/">
+    <span>Programming Engineering Notebook</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/source/" class="dd-item 
+parent
+
+
+">
+  <a href="/source/">
+    <span>Source</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/source/include/api.h/" class="dd-item
+         
+          ">
+            <a href="/source/include/api.h/">
+            <span>include/API.h</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/debug.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/debug.hpp/">
+            <span>include/debug.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/drive.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/drive.hpp/">
+            <span>include/drive.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/gyro.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/gyro.hpp/">
+            <span>include/gyro.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/lift.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/lift.hpp/">
+            <span>include/lift.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/main.h/" class="dd-item
+         
+          ">
+            <a href="/source/include/main.h/">
+            <span>include/main.h</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/motors.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/motors.hpp/">
+            <span>include/motors.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/pid.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/pid.hpp/">
+            <span>include/pid.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/sensors.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/sensors.hpp/">
+            <span>include/sensors.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/auto.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/auto.cpp/">
+            <span>src/auto.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/debug.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/debug.cpp/">
+            <span>src/debug.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/drive.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/drive.cpp/">
+            <span>src/drive.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/gyro.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/gyro.cpp/">
+            <span>src/gyro.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/init.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/init.cpp/">
+            <span>src/init.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/lift.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/lift.cpp/">
+            <span>src/lift.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/motors.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/motors.cpp/">
+            <span>src/motors.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/opcontrol.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/opcontrol.cpp/">
+            <span>src/opcontrol.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/pid.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/pid.cpp/">
+            <span>src/pid.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/sensors.cpp/" class="dd-item
+         active
+          ">
+            <a href="/source/src/sensors.cpp/">
+            <span>src/sensors.cpp</span> 
+            
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/'>VEX Robotics Competition Team 709S</a> > <a href='/source/'>Source</a> > src/sensors.cpp
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>src/sensors.cpp</h1>
+          
+
+
+
+
+<pre><code class="language-Cpp">// sensors.cpp: Source file for hardware abstraction of sensors
+// Copyright (C) 2017 Ethan Wells
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+
+#include &quot;../include/main.h&quot;
+
+namespace sensors {
+
+  quad_t left(1, 2, false);
+  quad_t right(3, 4, false);
+  pot_t lift(1, false);
+  gyro_t gyro(2, 197);
+
+  quad_t::quad_t(unsigned char port1, unsigned char port2, bool _inverted) {
+    ports[0] = port1;
+    ports[1] = port2;
+    inverted = _inverted;
+    zero     = 0;
+    request  = 0;
+  }
+  void quad_t::init(void) {
+    enc = encoderInit(quad_t::ports[0], quad_t::ports[1], quad_t::inverted);
+  }
+  long quad_t::value(void) { return (encoderGet(enc) - zero); }
+  void quad_t::reset(void) {
+    zero    = encoderGet(enc);
+    request = 0;
+  }
+
+  gyro_t::gyro_t(unsigned char _port, unsigned int _calibration) {
+    port        = _port;
+    calibration = _calibration;
+    zero        = 0;
+    request     = 0;
+  }
+  void gyro_t::init(void) { gyro_t::gyro = gyroInit(port, calibration); }
+  long gyro_t::value(void) { return (gyroGet(gyro_t::gyro) - zero); }
+  void gyro_t::reset(void) {
+    zero    = gyroGet(gyro_t::gyro);
+    request = 0;
+  }
+
+  pot_t::pot_t(unsigned char _port, bool _inverted) {
+    port     = _port;
+    inverted = _inverted;
+    zero     = 0;
+    request  = 0;
+  }
+  void pot_t::init(void) { analogCalibrate(port); }
+  long pot_t::value(void) {
+    return ((analogReadCalibrated(port) - zero) * ((inverted) ? -1 : 1));
+  }
+  void pot_t::reset(void) {
+    zero    = analogReadCalibrated(port);
+    request = 0;
+  }
+
+  sonic_t::sonic_t(unsigned char port1, unsigned char port2) {
+    ports[0] = port1;
+    ports[1] = port2;
+  }
+  void sonic_t::init(void) {
+    sonic = ultrasonicInit(sonic_t::ports[0], sonic_t::ports[1]);
+  }
+  long sonic_t::value(void) { return ultrasonicGet(sonic); }
+
+  button_t::button_t(unsigned char _port, bool _inverted) {
+    port     = _port;
+    inverted = _inverted;
+  }
+  void button_t::init(void) { pinMode(port, INPUT); }
+  bool button_t::value(void) {
+    return (digitalRead(port)) ? ((inverted) ? false : true)
+                               : ((inverted) ? true : false);
+  }
+
+  void init(void) {
+    left.init();
+    right.init();
+    lift.init();
+    gyro.init();
+  }
+
+  void reset(void) {
+    left.reset();
+    right.reset();
+  }
+} // namespace sensors
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/source/src/pid.cpp/" title="src/pid.cpp"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/source/include/api.h/" title="include/API.h" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+
+    
+    <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+

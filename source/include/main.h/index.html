@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="description" content="Code for include/main.h">
+
+
+    <title>include/main.h :: VEX Team 709S</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/horsey.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/source/include/main.h/">
+    <nav id="sidebar" class="">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>VEX Team 709S</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/iuyte.github.io\/";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/about/" class="dd-item 
+
+
+
+">
+  <a href="/about/">
+    <span>About Our Team Members</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/about/mentors/" class="dd-item
+         
+          ">
+            <a href="/about/mentors/">
+            <span>Our Mentors</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/about/spencer/" class="dd-item
+         
+          ">
+            <a href="/about/spencer/">
+            <span>Spencer</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/about/ethan/" class="dd-item
+         
+          ">
+            <a href="/about/ethan/">
+            <span>Ethan</span> 
+            
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/notebook/" class="dd-item 
+
+
+
+">
+  <a href="/notebook/">
+    <span>Engineering Notebooks</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+        
+
+
+
+
+<li data-nav-id="/notebook/programming/" class="dd-item 
+
+
+
+">
+  <a href="/notebook/programming/">
+    <span>Programming Engineering Notebook</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/source/" class="dd-item 
+parent
+
+
+">
+  <a href="/source/">
+    <span>Source</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/source/include/api.h/" class="dd-item
+         
+          ">
+            <a href="/source/include/api.h/">
+            <span>include/API.h</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/debug.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/debug.hpp/">
+            <span>include/debug.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/drive.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/drive.hpp/">
+            <span>include/drive.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/gyro.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/gyro.hpp/">
+            <span>include/gyro.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/lift.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/lift.hpp/">
+            <span>include/lift.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/main.h/" class="dd-item
+         active
+          ">
+            <a href="/source/include/main.h/">
+            <span>include/main.h</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/motors.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/motors.hpp/">
+            <span>include/motors.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/pid.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/pid.hpp/">
+            <span>include/pid.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/include/sensors.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/sensors.hpp/">
+            <span>include/sensors.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/auto.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/auto.cpp/">
+            <span>src/auto.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/debug.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/debug.cpp/">
+            <span>src/debug.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/drive.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/drive.cpp/">
+            <span>src/drive.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/gyro.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/gyro.cpp/">
+            <span>src/gyro.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/init.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/init.cpp/">
+            <span>src/init.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/lift.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/lift.cpp/">
+            <span>src/lift.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/motors.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/motors.cpp/">
+            <span>src/motors.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/opcontrol.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/opcontrol.cpp/">
+            <span>src/opcontrol.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/pid.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/pid.cpp/">
+            <span>src/pid.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/sensors.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/sensors.cpp/">
+            <span>src/sensors.cpp</span> 
+            
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/'>VEX Robotics Competition Team 709S</a> > <a href='/source/'>Source</a> > include/main.h
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>include/main.h</h1>
+          
+
+
+
+
+<pre><code class="language-Cpp">/** @file main.h
+ * @brief Header file for global functions
+ *
+ * Any experienced C or C++ programmer knows the importance of header files. For
+ *those who
+ * do not, a header file allows multiple files to reference functions in other
+ *files without
+ * necessarily having to see the code (and therefore causing a multiple
+ *definition). To make
+ * a function in &quot;opcontrol.c&quot;, &quot;auto.c&quot;, &quot;main.c&quot;, or any other C file visible
+ *to the core
+ * implementation files, prototype it here.
+ *main
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of Purdue University ACM SIG BOTS nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+ *AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL PURDUE UNIVERSITY ACM SIG BOTS BE LIABLE FOR
+ *ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Purdue Robotics OS contains FreeRTOS (http://www.freertos.org) whose source
+ *code may be
+ * obtained from http://sourceforge.net/projects/freertos/files/ or on request.
+ */
+
+#ifndef MAIN_H_
+
+// This prevents multiple inclusion, which isn't bad for this file but is good
+// practice
+#define MAIN_H_
+
+#include &quot;API.h&quot;
+#include &quot;debug.hpp&quot;
+
+// Allow usage of this file in C++ programs
+#ifdef __cplusplus
+extern &quot;C&quot; {
+#endif
+
+//#define AUTO_DEBUG
+
+// A function prototype looks exactly like its declaration, but with a semicolon
+// instead of
+// actual code. If a function does not match a prototype, compile errors will
+// occur.
+
+// Prototypes for initialization, operator control and autonomous
+
+/**
+ * Runs the user autonomous code. This function will be started in its own task
+ * with the default
+ * priority and stack size whenever the robot is enabled via the Field
+ * Management System or the
+ * VEX Competition Switch in the autonomous mode. If the robot is disabled or
+ * communications is
+ * lost, the autonomous task will be stopped by the kernel. Re-enabling the
+ * robot will restart
+ * the task, not re-start it from where it left off.
+ *
+ * Code running in the autonomous task cannot access information from the VEX
+ * Joystick. However,
+ * the autonomous function can be invoked from another task if a VEX Competition
+ * Switch is not
+ * available, and it can access joystick information if called in this way.
+ *
+ * The autonomous task may exit, unlike operatorControl() which should never
+ * exit. If it does
+ * so, the robot will await a switch to another mode or disable/enable cycle.
+ */
+void autonomous();
+/**
+ * Runs pre-initialization code. This function will be started in kernel mode
+ * one time while the
+ * VEX Cortex is starting up. As the scheduler is still paused, most API
+ * functions will fail.
+ *
+ * The purpose of this function is solely to set the default pin modes
+ * (pinMode()) and port
+ * states (digitalWrite()) of limit switches, push buttons, and solenoids. It
+ * can also safely
+ * configure a UART port (usartOpen()) but cannot set up an LCD (lcdInit()).
+ */
+void initializeIO();
+/**
+ * Runs user initialization code. This function will be started in its own task
+ * with the default
+ * priority and stack size once when the robot is starting up. It is possible
+ * that the VEXnet
+ * communication link may not be fully established at this time, so reading from
+ * the VEX
+ * Joystick may fail.
+ *
+ * This function should initialize most sensors (gyro, encoders, ultrasonics),
+ * LCDs, global
+ * variables, and IMEs.
+ *
+ * This function must exit relatively promptly, or the operatorControl() and
+ * autonomous() tasks
+ * will not start. An autonomous mode selection menu like the pre_auton() in
+ * other environments
+ * can be implemented in this task if desired.
+ */
+void initialize();
+/**
+ * Runs the user operator control code. This function will be started in its own
+ * task with the
+ * default priority and stack size whenever the robot is enabled via the Field
+ * Management System
+ * or the VEX Competition Switch in the operator control mode. If the robot is
+ * disabled or
+ * communications is lost, the operator control task will be stopped by the
+ * kernel. Re-enabling
+ * the robot will restart the task, not resume it from where it left off.
+ *
+ * If no VEX Competition Switch or Field Management system is plugged in, the
+ * VEX Cortex will
+ * run the operator control task. Be warned that this will also occur if the VEX
+ * Cortex is
+ * tethered directly to a computer via the USB A to A cable without any VEX
+ * Joystick attached.
+ *
+ * Code running in this task can take almost any action, as the VEX Joystick is
+ * available and
+ * the scheduler is operational. However, proper use of delay() or
+ * taskDelayUntil() is highly
+ * recommended to give other tasks (including system tasks such as updating
+ * LCDs) time to run.
+ *
+ * This task should never exit; it should end with some kind of infinite loop,
+ * even if empty.
+ */
+void operatorControl();
+
+// End C++ export structure
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/source/include/lift.hpp/" title="include/lift.hpp"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/source/include/motors.hpp/" title="include/motors.hpp" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+
+    
+    <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+
