@@ -31,8 +31,7 @@ NOTE: Rick and Lisa did in fact earn the Mentor of the Year Award at the Norther
       <description>Contact: beanwells@icloud.com
 Roles: Lead Builder, Lead Designer
 Class: 2019
-Grades: Not good enough
-Occupations: Pretending to study while actually on youtube</description>
+Spencer please give me information to put here.</description>
     </item>
     
     <item>
@@ -58,7 +57,7 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>include/API.h</title>
+      <title>API.h</title>
       <link>https://iuyte.github.io/source/include/api.h/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -67,79 +66,7 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>include/debug.hpp</title>
-      <link>https://iuyte.github.io/source/include/debug.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/debug.hpp/</guid>
-      <description>// debug.hpp: Header file for performing debugging tasks // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
-    </item>
-    
-    <item>
-      <title>include/drive.hpp</title>
-      <link>https://iuyte.github.io/source/include/drive.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/drive.hpp/</guid>
-      <description>// drive.hpp: Header file for utilities relating to the drive // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
-    </item>
-    
-    <item>
-      <title>include/gyro.hpp</title>
-      <link>https://iuyte.github.io/source/include/gyro.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/gyro.hpp/</guid>
-      <description>// gyro.hpp: Gyro utilities that provide ease of access to the robot&#39;s rotation // and manipulation of this rotation // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version.</description>
-    </item>
-    
-    <item>
-      <title>include/lift.hpp</title>
-      <link>https://iuyte.github.io/source/include/lift.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/lift.hpp/</guid>
-      <description>// lift.hpp: Header file for utilities relating to the lift // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
-    </item>
-    
-    <item>
-      <title>include/main.h</title>
-      <link>https://iuyte.github.io/source/include/main.h/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/main.h/</guid>
-      <description>/** @file main.h * @brief Header file for global functions * * Any experienced C or C++ programmer knows the importance of header files. For *those who * do not, a header file allows multiple files to reference functions in other *files without * necessarily having to see the code (and therefore causing a multiple *definition). To make * a function in &amp;quot;opcontrol.c&amp;quot;, &amp;quot;auto.c&amp;quot;, &amp;quot;main.c&amp;quot;, or any other C file visible *to the core * implementation files, prototype it here.</description>
-    </item>
-    
-    <item>
-      <title>include/motors.hpp</title>
-      <link>https://iuyte.github.io/source/include/motors.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/motors.hpp/</guid>
-      <description>// motors.hpp: Header file of hardware abstraction for motors and slewing // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
-    </item>
-    
-    <item>
-      <title>include/pid.hpp</title>
-      <link>https://iuyte.github.io/source/include/pid.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/pid.hpp/</guid>
-      <description>// pid.hpp: Header file for the pid controller and all of it&#39;s assets // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
-    </item>
-    
-    <item>
-      <title>include/sensors.hpp</title>
-      <link>https://iuyte.github.io/source/include/sensors.hpp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iuyte.github.io/source/include/sensors.hpp/</guid>
-      <description>// sensors.hpp: Header file for hardware abstraction of sensors // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
-    </item>
-    
-    <item>
-      <title>src/auto.cpp</title>
+      <title>auto.cpp</title>
       <link>https://iuyte.github.io/source/src/auto.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -148,7 +75,7 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/debug.cpp</title>
+      <title>debug.cpp</title>
       <link>https://iuyte.github.io/source/src/debug.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -157,7 +84,16 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/drive.cpp</title>
+      <title>debug.hpp</title>
+      <link>https://iuyte.github.io/source/include/debug.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/debug.hpp/</guid>
+      <description>// debug.hpp: Header file for performing debugging tasks // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>drive.cpp</title>
       <link>https://iuyte.github.io/source/src/drive.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -166,7 +102,16 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/gyro.cpp</title>
+      <title>drive.hpp</title>
+      <link>https://iuyte.github.io/source/include/drive.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/drive.hpp/</guid>
+      <description>// drive.hpp: Header file for utilities relating to the drive // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>gyro.cpp</title>
       <link>https://iuyte.github.io/source/src/gyro.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -175,7 +120,16 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/init.cpp</title>
+      <title>gyro.hpp</title>
+      <link>https://iuyte.github.io/source/include/gyro.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/gyro.hpp/</guid>
+      <description>// gyro.hpp: Gyro utilities that provide ease of access to the robot&#39;s rotation // and manipulation of this rotation // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version.</description>
+    </item>
+    
+    <item>
+      <title>init.cpp</title>
       <link>https://iuyte.github.io/source/src/init.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -184,7 +138,7 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/lift.cpp</title>
+      <title>lift.cpp</title>
       <link>https://iuyte.github.io/source/src/lift.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -193,7 +147,25 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/motors.cpp</title>
+      <title>lift.hpp</title>
+      <link>https://iuyte.github.io/source/include/lift.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/lift.hpp/</guid>
+      <description>// lift.hpp: Header file for utilities relating to the lift // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>main.h</title>
+      <link>https://iuyte.github.io/source/include/main.h/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/main.h/</guid>
+      <description>/** @file main.h * @brief Header file for global functions * * Any experienced C or C++ programmer knows the importance of header files. For *those who * do not, a header file allows multiple files to reference functions in other *files without * necessarily having to see the code (and therefore causing a multiple *definition). To make * a function in &amp;quot;opcontrol.c&amp;quot;, &amp;quot;auto.c&amp;quot;, &amp;quot;main.c&amp;quot;, or any other C file visible *to the core * implementation files, prototype it here.</description>
+    </item>
+    
+    <item>
+      <title>motors.cpp</title>
       <link>https://iuyte.github.io/source/src/motors.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -202,7 +174,16 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/opcontrol.cpp</title>
+      <title>motors.hpp</title>
+      <link>https://iuyte.github.io/source/include/motors.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/motors.hpp/</guid>
+      <description>// motors.hpp: Header file of hardware abstraction for motors and slewing // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>opcontrol.cpp</title>
       <link>https://iuyte.github.io/source/src/opcontrol.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -211,7 +192,7 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/pid.cpp</title>
+      <title>pid.cpp</title>
       <link>https://iuyte.github.io/source/src/pid.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -220,12 +201,30 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
-      <title>src/sensors.cpp</title>
+      <title>pid.hpp</title>
+      <link>https://iuyte.github.io/source/include/pid.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/pid.hpp/</guid>
+      <description>// pid.hpp: Header file for the pid controller and all of it&#39;s assets // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>sensors.cpp</title>
       <link>https://iuyte.github.io/source/src/sensors.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://iuyte.github.io/source/src/sensors.cpp/</guid>
       <description>// sensors.cpp: Source file for hardware abstraction of sensors // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>sensors.hpp</title>
+      <link>https://iuyte.github.io/source/include/sensors.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/sensors.hpp/</guid>
+      <description>// sensors.hpp: Header file for hardware abstraction of sensors // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
     </item>
     
   </channel>

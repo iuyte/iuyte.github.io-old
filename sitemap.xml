@@ -38,6 +38,10 @@
   </url>
   
   <url>
+    <loc>https://iuyte.github.io/source/include/api.h/</loc>
+  </url>
+  
+  <url>
     <loc>https://iuyte.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -56,42 +60,6 @@
   </url>
   
   <url>
-    <loc>https://iuyte.github.io/source/include/api.h/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/debug.hpp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/drive.hpp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/gyro.hpp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/lift.hpp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/main.h/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/motors.hpp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/pid.hpp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iuyte.github.io/source/include/sensors.hpp/</loc>
-  </url>
-  
-  <url>
     <loc>https://iuyte.github.io/source/src/auto.cpp/</loc>
   </url>
   
@@ -100,11 +68,27 @@
   </url>
   
   <url>
+    <loc>https://iuyte.github.io/source/include/debug.hpp/</loc>
+  </url>
+  
+  <url>
     <loc>https://iuyte.github.io/source/src/drive.cpp/</loc>
   </url>
   
   <url>
+    <loc>https://iuyte.github.io/source/include/drive.hpp/</loc>
+  </url>
+  
+  <url>
     <loc>https://iuyte.github.io/source/src/gyro.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/gyro.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/</loc>
   </url>
   
   <url>
@@ -116,7 +100,19 @@
   </url>
   
   <url>
+    <loc>https://iuyte.github.io/source/include/lift.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/main.h/</loc>
+  </url>
+  
+  <url>
     <loc>https://iuyte.github.io/source/src/motors.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/motors.hpp/</loc>
   </url>
   
   <url>
@@ -128,7 +124,19 @@
   </url>
   
   <url>
+    <loc>https://iuyte.github.io/source/include/pid.hpp/</loc>
+  </url>
+  
+  <url>
     <loc>https://iuyte.github.io/source/src/sensors.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/sensors.hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/src/</loc>
   </url>
   
 </urlset>
