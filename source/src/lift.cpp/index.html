@@ -316,6 +316,17 @@ parent
             </a></li>
          
         
+         
+          <li data-nav-id="/source/include/util.h/" class="dd-item
+         
+          ">
+            <a href="/source/include/util.h/">
+            <span>util.h</span> 
+            
+
+            </a></li>
+         
+        
         
 
 
@@ -576,6 +587,10 @@ namespace lift {
     right.set(power);
   }
 
+  void lock(void) {
+    set(lockN);
+  }
+
   void to(position pos, int int_pos, int tolerance) {
     if (int_pos == -1)
       int_pos = pos;
@@ -587,8 +602,16 @@ namespace lift {
       delay(15);
     } while (int_pos &gt; sensor-&gt;value() + tolerance ||
              int_pos &lt; sensor-&gt;value() - tolerance);
-    set(lock);
-    return;
+    lock();
+  }
+
+  void control(void) {
+    int power = (joystickGetDigital(1, 5, JOY_UP) * 127) +
+                (joystickGetDigital(1, 5, JOY_DOWN) * 127);
+    power = (power == 0 &amp;&amp; sensor-&gt;value() &gt; threshold)
+                ? lockN
+                : ((sensor-&gt;value() &lt; threshold) ? 0 : power);
+    set(power);
   }
 } // namespace lift
 </code></pre>
@@ -708,6 +731,17 @@ namespace lift {
                     
                         
                         
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 

@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.24.1" />
-    <meta name="description" content="Mini Autobiographies">
+    <meta name="description" content="Code for util.h">
 
 
-    <title>About Our Team Members :: VEX Team 709S</title>
+    <title>util.h :: VEX Team 709S</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     
 
   </head>
-  <body class="" data-url="/about/">
+  <body class="" data-url="/source/include/util.h/">
     <nav id="sidebar" class="">
   <div id="header-wrapper">
     <div id="header">
@@ -73,15 +73,15 @@
 
 
 <li data-nav-id="/about/" class="dd-item 
-parent
-active
+
+
 
 ">
   <a href="/about/">
     <span>About Our Team Members</span>
 
     
-    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
     
     
     
@@ -181,7 +181,7 @@ active
 
 
 <li data-nav-id="/source/" class="dd-item 
-
+parent
 
 
 ">
@@ -189,7 +189,7 @@ active
     <span>Source</span>
 
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
     
     
     
@@ -202,7 +202,7 @@ active
 
 
 <li data-nav-id="/source/include/" class="dd-item 
-
+parent
 
 
 ">
@@ -210,7 +210,7 @@ active
     <span>include</span>
 
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
     
     
     
@@ -318,7 +318,7 @@ active
         
          
           <li data-nav-id="/source/include/util.h/" class="dd-item
-         
+         active
           ">
             <a href="/source/include/util.h/">
             <span>util.h</span> 
@@ -508,7 +508,17 @@ active
 
 
 
- <a href='/'>VEX Robotics Competition Team 709S</a> > About Our Team Members
+
+
+
+
+
+
+ <a href='/'>VEX Robotics Competition Team 709S</a> > <a href='/source/'>Source</a> > <a href='/source/include/'>include</a> > util.h
+
+ 
+
+ 
 
  
 
@@ -526,122 +536,41 @@ active
         
         <div id="body-inner">
           
-            <h1>About Our Team Members</h1>
+            <h1>util.h</h1>
           
 
 
 
 
+<pre><code class="language-Cpp">// util.h: General utilities
+// Copyright (C) 2017 Ethan Wells
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+
+#ifndef UTIL_H
+#define UTIL_H
+
+#define CLIPNUM(x, low, high) \
+  (((x) &gt; (high)) ? (high) : (((x) &lt; (low)) ? (low) : (x)))
+
+#endif /* end of include guard: UTIL_H */
+</code></pre>
 
 
 <footer class=" footline" >
 	
-	    <i class='fa fa-user'></i> <a href="mailto:ethanialw@gmail.com">Ethan</a>  <i class='fa fa-calendar'></i> 18/06/2017
-	    </div>
-	
 </footer>
-
-
-
-	
-
-	<div class="extra-pagination inner">
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 on 1</span>
-	
-</nav>
-
-	</div>
-
-	
-	   <article class="post about">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/about/mentors/">Our Mentors</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Our mentors are the most amazing mentors EVER!!!
-They exemplify kindness, leadership, and encourage us to approach problems in new, creative ways. Without them, we simply would not have a team. So, a big shoutout to our Mother and Father, Rick and Lisa, as well as our brother Parker, for their unending support and tolerance of our travels with robotics.
-NOTE: Rick and Lisa did in fact earn the Mentor of the Year Award at the Northern New York State Championship! <a class="read-more" href="/about/mentors/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-            <i class='fa fa-user'></i> <a href="mailto:ethanialw@gmail.com">Ethan</a>  <i class='fa fa-calendar'></i> 19/06/2017
-        
-
-        
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	   <article class="post about">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/about/spencer/">Spencer</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Contact: beanwells@icloud.com
-Roles: Lead Builder, Lead Designer
-Class: 2019
-Spencer please give me information to put here. <a class="read-more" href="/about/spencer/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-            <i class='fa fa-user'></i> <a href="mailto:beanwells@icloud.com">Spencer</a>  <i class='fa fa-calendar'></i> 18/06/2017
-        
-
-        
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	   <article class="post about">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/about/ethan/">Ethan</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Contact: ethanialw@gmail.com
-Roles: Lead Programmer, Website Creator / Maintainer, Apprentice Builder / Designer
-Class: 2021
-Likes:  Programming Languages:  Python HTML CSS Javascript C C++   Linux (currently running Linux Mint, possibly switching to Arch in the future) Learning, especially STEAM things Space, specifically astrophysics and rocket science 
-Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="read-more" href="/about/ethan/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-            <i class='fa fa-user'></i> <a href="mailto:ethanialw@gmail.com">Ethan</a>  <i class='fa fa-calendar'></i> 18/06/2017
-        
-
-        
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-
-	<div style="margin-bottom:2rem"></div>
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 on 1</span>
-	
-</nav>
-
 
 
 
@@ -670,18 +599,6 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
             
                 
                     
-                    
-                
-                
-                
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -713,6 +630,17 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
                 
                     
             
@@ -743,6 +671,7 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
             
                 
                     
+                    
                 
                 
                 
@@ -750,6 +679,7 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
             
             
                 
+                    
                     
                 
                 
@@ -762,16 +692,8 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
             
                 
                     
-                
-                
-                
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -867,11 +789,26 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
                 
                     
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1001,10 +938,10 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
 
 
         
-            <a class="nav nav-prev" href="/" title="VEX Robotics Competition Team 709S"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/source/include/sensors.hpp/" title="sensors.hpp"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/about/mentors/" title="Our Mentors" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/source/src/" title="src" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1031,3 +968,4 @@ Dislikes:  Java (it&rsquo;s overused and unproductive) Canned Corn <a class="rea
 
   </body>
 </html>
+

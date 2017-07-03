@@ -227,5 +227,14 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
       <description>// sensors.hpp: Header file for hardware abstraction of sensors // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
     </item>
     
+    <item>
+      <title>util.h</title>
+      <link>https://iuyte.github.io/source/include/util.h/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/util.h/</guid>
+      <description>// util.h: General utilities // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
   </channel>
 </rss>
