@@ -547,7 +547,9 @@ parent
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 
-#pragma once
+#ifndef LIFT_HPP
+#define LIFT_HPP
+
 #include &quot;drive.hpp&quot;
 
 /** Contains everything relating to the drive */
@@ -595,6 +597,8 @@ namespace lift {
   void to(position pos = bottom, int int_pos = -1, int tolerance = 50);
 
 } // namespace lift
+
+#endif /* end of include guard: LIFT_HPP */
 </code></pre>
 
 

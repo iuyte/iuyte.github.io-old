@@ -547,7 +547,9 @@ parent
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 
-#pragma once
+#ifndef PID_HPP
+#define PID_HPP
+
 #include &quot;lift.hpp&quot;
 
 /** Consists of pid, and all subcomponents, etc */
@@ -600,6 +602,8 @@ namespace pid {
   /** TaskHandle for the pid task */
   extern TaskHandle pidHandle;
 } // namespace pid
+
+#endif /* end of include guard: PID_HPP */
 </code></pre>
 
 

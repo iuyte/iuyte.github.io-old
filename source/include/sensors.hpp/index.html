@@ -547,7 +547,9 @@ parent
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 
-#pragma once
+#ifndef SENSORS_HPP
+#define SENSORS_HPP
+
 #include &quot;API.h&quot;
 
 /** The namespace containing all information, functions, objects, relating to
@@ -674,6 +676,8 @@ namespace sensors {
   /** gyro on the drive */
   extern gyro_t gyro;
 } // namespace sensors
+
+#endif /* end of include guard: SENSORS_HPP */
 </code></pre>
 
 
