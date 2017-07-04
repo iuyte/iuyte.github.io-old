@@ -561,8 +561,10 @@ parent
 #ifndef UTIL_H
 #define UTIL_H
 
-#define CLIPNUM(x, low, high) \
-  (((x) &gt; (high)) ? (high) : (((x) &lt; (low)) ? (low) : (x)))
+/** Clips iInput to a high of iHigh and a low of iLow - good for keeping a
+ * number to a maximum/minimum value */
+#define clipNum(iInput, iHigh, iLow) \
+  iInput &lt;= iLow ? iLow : (iInput &gt;= iHigh ? iHigh : iInput)
 
 #endif /* end of include guard: UTIL_H */
 </code></pre>
