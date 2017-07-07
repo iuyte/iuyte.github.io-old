@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.24.1" />
-    <meta name="description" content="Code for gyro.cpp">
+    <meta name="description" content="Code for joystick.cpp">
 
 
-    <title>gyro.cpp :: VEX Team 709S</title>
+    <title>joystick.cpp :: VEX Team 709S</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     
 
   </head>
-  <body class="" data-url="/source/src/gyro.cpp/">
+  <body class="" data-url="/source/src/joystick.cpp/">
     <nav id="sidebar" class="">
   <div id="header-wrapper">
     <div id="header">
@@ -398,7 +398,7 @@ parent
         
          
           <li data-nav-id="/source/src/gyro.cpp/" class="dd-item
-         active
+         
           ">
             <a href="/source/src/gyro.cpp/">
             <span>gyro.cpp</span> 
@@ -420,7 +420,7 @@ parent
         
          
           <li data-nav-id="/source/src/joystick.cpp/" class="dd-item
-         
+         active
           ">
             <a href="/source/src/joystick.cpp/">
             <span>joystick.cpp</span> 
@@ -536,7 +536,7 @@ parent
 
 
 
- <a href='/'>VEX Robotics Competition Team 709S</a> > <a href='/source/'>Source</a> > <a href='/source/src/'>src</a> > gyro.cpp
+ <a href='/'>VEX Robotics Competition Team 709S</a> > <a href='/source/'>Source</a> > <a href='/source/src/'>src</a> > joystick.cpp
 
  
 
@@ -558,14 +558,13 @@ parent
         
         <div id="body-inner">
           
-            <h1>gyro.cpp</h1>
+            <h1>joystick.cpp</h1>
           
 
 
 
 
-<pre><code class="language-Cpp">// gyro.cpp: Gyro utilities that provide ease of access to the robot's rotation
-// and manipulation of this rotation
+<pre><code class="language-Cpp">// joystick.cpp: Source file that makes joystick stuff easier
 // Copyright (C) 2017 Ethan Wells
 //
 // This program is free software: you can redistribute it and/or modify
@@ -581,37 +580,17 @@ parent
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 
-#include &quot;../include/main.h&quot;
+#include &quot;../include/joystick.hpp&quot;
 
-namespace gyro {
-  void drive::task(void* none) {
-    float change[2] = {0};
-    while (on) {
-      changer = (abs(gyro-&gt;value() - iHeading) - tolerance) * urgency;
-      if (gyro-&gt;value() &gt; iHeading + tolerance) {
-        change[0] -= changer;
-        change[1] += changer;
-      } else if (gyro-&gt;value() &lt; iHeading - tolerance) {
-        change[0] += changer;
-        change[1] -= changer;
-      }
-      pid::request(change[0], change[1]);
-      delay(50);
-    }
+namespace joystick {
+  int analog(Channel channel) {
+    return joystickGetAnalog(1, channel);
   }
 
-  void drive::off(void) {
-    on = false;
+  bool digital(Group group, Button button) {
+    return joystickGetDigital(1, group, button);
   }
-
-  drive::drive(int heading, float urgency, bool absolute, sensors::gyro_t* gyro,
-               unsigned int tolerance)
-      : heading(heading),
-        urgency(urgency),
-        gyro(gyro),
-        iHeading(absolute ? heading : heading + gyro-&gt;value()) {
-  }
-} // namespace gyro
+} // namespace joystick
 </code></pre>
 
 
@@ -911,21 +890,6 @@ namespace gyro {
             
                 
                     
-                    
-                
-                
-                
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
                 
@@ -947,6 +911,21 @@ namespace gyro {
             
             
                 
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1010,10 +989,10 @@ namespace gyro {
 
 
         
-            <a class="nav nav-prev" href="/source/src/drive.cpp/" title="drive.cpp"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/source/src/init.cpp/" title="init.cpp"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/source/src/init.cpp/" title="init.cpp" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/source/src/lift.cpp/" title="lift.cpp" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

@@ -262,6 +262,17 @@ parent
          
         
          
+          <li data-nav-id="/source/include/joystick.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/joystick.hpp/">
+            <span>joystick.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
           <li data-nav-id="/source/include/lift.hpp/" class="dd-item
          
           ">
@@ -402,6 +413,17 @@ parent
           ">
             <a href="/source/src/init.cpp/">
             <span>init.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/joystick.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/joystick.cpp/">
+            <span>joystick.cpp</span> 
             
 
             </a></li>
@@ -572,10 +594,10 @@ void operatorControl() {
     } else {
       drive::accel::drive();
     }
-    if (!wpressed &amp;&amp; joystickGetDigital(1, 7, JOY_DOWN)) {
+    if (!wpressed &amp;&amp; joystick::digital(7, joystick::Down)) {
       tank = !tank;
     } else {
-      wpressed = joystickGetDigital(1, 7, JOY_DOWN);
+      wpressed = joystick::digital(7, joystick::Down);
     }
     lift::control();
     delay(50);
@@ -815,6 +837,17 @@ void operatorControl() {
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
                 
                     
             
@@ -835,6 +868,17 @@ void operatorControl() {
                     
                         
                         
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 

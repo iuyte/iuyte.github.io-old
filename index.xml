@@ -138,6 +138,24 @@ Dislikes:  Java (it&amp;rsquo;s overused and unproductive) Canned Corn</descript
     </item>
     
     <item>
+      <title>joystick.cpp</title>
+      <link>https://iuyte.github.io/source/src/joystick.cpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/src/joystick.cpp/</guid>
+      <description>// joystick.cpp: Source file that makes joystick stuff easier // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
+      <title>joystick.hpp</title>
+      <link>https://iuyte.github.io/source/include/joystick.hpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iuyte.github.io/source/include/joystick.hpp/</guid>
+      <description>// joystick.hpp: Makes joystick stuff easier // Copyright (C) 2017 Ethan Wells // // This program is free software: you can redistribute it and/or modify // it under the terms of the GNU Lesser General Public License as published by // the Free Software Foundation, either version 3 of the License, or // (at your option) any later version. // // This program is distributed in the hope that it will be useful, // but WITHOUT ANY WARRANTY; without even the implied warranty of // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
+    
+    <item>
       <title>lift.cpp</title>
       <link>https://iuyte.github.io/source/src/lift.cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

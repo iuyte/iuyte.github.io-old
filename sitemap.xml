@@ -96,6 +96,14 @@
   </url>
   
   <url>
+    <loc>https://iuyte.github.io/source/src/joystick.cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iuyte.github.io/source/include/joystick.hpp/</loc>
+  </url>
+  
+  <url>
     <loc>https://iuyte.github.io/source/src/lift.cpp/</loc>
   </url>
   

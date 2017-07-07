@@ -262,6 +262,17 @@ parent
          
         
          
+          <li data-nav-id="/source/include/joystick.hpp/" class="dd-item
+         
+          ">
+            <a href="/source/include/joystick.hpp/">
+            <span>joystick.hpp</span> 
+            
+
+            </a></li>
+         
+        
+         
           <li data-nav-id="/source/include/lift.hpp/" class="dd-item
          
           ">
@@ -402,6 +413,17 @@ parent
           ">
             <a href="/source/src/init.cpp/">
             <span>init.cpp</span> 
+            
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/source/src/joystick.cpp/" class="dd-item
+         
+          ">
+            <a href="/source/src/joystick.cpp/">
+            <span>joystick.cpp</span> 
             
 
             </a></li>
@@ -606,8 +628,8 @@ namespace lift {
   }
 
   void control(void) {
-    int power = (joystickGetDigital(1, 5, JOY_UP) * 127) +
-                (joystickGetDigital(1, 5, JOY_DOWN) * 127);
+    int power = (joystick::digital(5, joystick::Up) * 127) +
+                (joystick::digital(5, joystick::Down) * 127);
     power = (power == 0 &amp;&amp; sensor-&gt;value() &gt; threshold)
                 ? lockN
                 : ((sensor-&gt;value() &lt; threshold) ? 0 : power);
@@ -848,6 +870,17 @@ namespace lift {
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
                 
                     
             
@@ -868,6 +901,17 @@ namespace lift {
                     
                         
                         
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -990,7 +1034,7 @@ namespace lift {
 
 
         
-            <a class="nav nav-prev" href="/source/src/init.cpp/" title="init.cpp"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/source/src/joystick.cpp/" title="joystick.cpp"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="/source/src/motors.cpp/" title="motors.cpp" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
